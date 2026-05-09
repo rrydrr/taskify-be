@@ -1,0 +1,24 @@
+{
+  "name": "taskify-be",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc",
+    "seed": "bun run src/db/seed.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "devDependencies": {
+    "@types/bun": "1",
+    "drizzle-kit": "^0.31.10",
+    "fast-check": "^3.23.2",
+    "typescript": "5"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^1.3.1",
+    "@neondatabase/serverless": "^1.1.0",
+    "drizzle-orm": "^0.45.2",
+    "elysia": "1"
+  }
+}
