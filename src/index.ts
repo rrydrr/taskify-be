@@ -57,3 +57,4 @@ app
   .use(tasksModule);
 
 export { app };
+export default app;

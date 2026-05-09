@@ -1,4 +1,3 @@
 {
-  "buildCommand": "true",
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+  "bunVersion": "1.x"
 }
