@@ -1,11 +1,12 @@
 import { Elysia } from "elysia";
+import { cors } from "@elysiajs/cors";
 import { swagger } from "@elysiajs/swagger";
 import { useApiKey } from "./middlewares/useApiKey";
 import { tasksModule } from "./modules/tasks";
 
 const isLocal = process.env.NODE_ENV === "local";
 
-let app = new Elysia();
+let app = new Elysia().use(cors());
 
 if (isLocal) {
   app = app.use(
